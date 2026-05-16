@@ -5,9 +5,9 @@ I work across the full stack—from raw data ingestion to production ML pipeline
 
 ## What I do
 
-- **Data Platforms** — Design and build scalable data infrastructure on GCP
+- **Data Platforms** — Design and build scalable data & AI infrastructure
 - **ML Pipelines** — End-to-end pipelines for recommendations, forecasting, and more
-- **GenAI & LLMs** — RAG systems, chatbots, and LLM-powered applications
+- **GenAI & LLMs** — RAG systems, agents, and LLM-powered applications
 - **Unstructured Data** — Using LLMs to extract structured data from unstructured sources at scale
 - **Data Products** — Analytics platforms and self-serve tools that teams actually use
 
