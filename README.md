@@ -1,6 +1,6 @@
 # Hi, I'm Joseph
 
-Senior AI Data Engineer with 6+ years of experience building data platforms and shipping AI products.
+Staff Data Engineer with 6+ years of experience building data platforms and shipping AI products.
 I work across the full stack—from raw data ingestion to production ML pipelines to user-facing AI applications.
 
 ## What I do
