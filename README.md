@@ -1,42 +1,45 @@
 # Hi, I'm Joseph
 
-Data Engineer with 7+ years of experience building data platforms and shipping AI products.
-I work across the full stack—from raw data ingestion to production ML pipelines to user-facing AI applications.
+Data & AI Platform Engineer building scalable data infrastructure, ML pipelines, and production LLM systems.
+I work across the stack—from ingestion and orchestration to Kubernetes-based platforms and user-facing AI applications.
 
 ## What I do
 
-- **Data Platforms** — Design and build scalable data & AI infrastructure
-- **ML Pipelines** — End-to-end pipelines for recommendations, forecasting, and more
-- **GenAI & LLMs** — RAG systems, agents, and LLM-powered applications
-- **Unstructured Data** — Using LLMs to extract structured data from unstructured sources at scale
-- **Data Products** — Analytics platforms and self-serve tools that teams actually use
+- **Data & AI Platforms** — Design and operate scalable data, ML, and LLM infrastructure
+- **ML & Data Pipelines** — End-to-end pipelines for training, inference, and analytics
+- **GenAI & LLMs** — RAG systems, agent tooling, and structured extraction at scale
+- **Data Products** — Self-serve platforms and internal tools that teams rely on
+
+## Homelab
+
+I run a self-hosted Kubernetes cluster ([`homelab`](https://github.com/joseph-cavarretta/homelab)) to operate data and ML platform infrastructure end-to-end:
+
+- **Cluster & Provisioning** — k3s across an `x86_64` control plane (`arch-mini`) and 3 `arm64` Raspberry Pi workers, automated with `cloud-init` and Ansible
+- **GitOps & Management** — Argo CD (app-of-apps with automated sync/prune/self-heal) and Rancher
+- **Networking & Security** — MetalLB (L2 LoadBalancer), Traefik ingress with LAN-only IP allowlists, and `cert-manager`
+- **Storage & ML Platform** — Garage (S3-compatible object storage) backing MLflow for experiment tracking and artifact storage
 
 ## Tech I work with
 
 | Category | Technologies |
 |----------|-------------|
-| **Languages** | Python, SQL, Bash |
-| **Infrastructure** | Terraform, Kubernetes, Helm, Docker, GitOps |
+| **Languages** | Python, SQL, Bash, Go |
+| **Infrastructure** | Kubernetes, Terraform, Helm, Ansible, Argo CD, Docker |
 | **Orchestration** | Prefect, Airflow |
 | **Data** | Spark, Dataflow, BigQuery, Databricks, dbt |
-| **AI/ML** | Vertex AI, RAG systems, pgvector, OpenSearch |
-| **Cloud** | GCP (primary), AWS |
+| **AI/ML** | Vertex AI, MLflow, RAG systems, pgvector, OpenSearch |
+| **Cloud** | GCP, AWS |
 
 ## Featured projects
 
 | Project | What it is |
 |---------|------------|
-| [kafka-spark-streaming](https://github.com/joseph-cavarretta/kafka-spark-streaming) | Real-time event pipeline: Kafka + Avro + Schema Registry → Spark Structured Streaming → Cassandra, fully Dockerized |
-| [billion-rows-challenge](https://github.com/joseph-cavarretta/billion-rows-challenge) | Benchmarking Polars, DuckDB, pandas, AWK, and more on aggregating 1 billion rows (14 GB CSV) |
+| [homelab](https://github.com/joseph-cavarretta/homelab) | Self-hosted k3s cluster provisioned with Ansible and managed via Argo CD GitOps |
+| [agent-dev-harness](https://github.com/joseph-cavarretta/agent-dev-harness) | Standards, guardrails, and MCP servers for AI coding agents |
 | [ekg-classifier](https://github.com/joseph-cavarretta/ekg-classifier) | Neural network classifying EKG signals into 5 arrhythmia categories (F1 0.97), trainable locally or on GCP Dataproc via Terraform |
-| [weather-anomaly-detection](https://github.com/joseph-cavarretta/weather-anomaly-detection) | Isolation Forest + STL decomposition over 50 years of weather data, scheduled with Airflow, archived to GCS |
-| [strava-analytics](https://github.com/joseph-cavarretta/strava-analytics) | ETL from the Strava API into a Postgres warehouse with Superset dashboards |
-| [k-nearest-neighbors](https://github.com/joseph-cavarretta/k-nearest-neighbors) | Spatial matching of 27k+ locations — Ball Tree vs brute force (20 min → 1.4 s) |
-
-## Currently exploring
-
-- **LLM agent frameworks** — Interested in how autonomous agents can improve data workflows and decision-making
-- **Self-hosted K8s homelab** — Building a Kubernetes cluster with Raspberry Pi worker nodes and an Arch Linux control plane on a Minisforum mini PC
+| [billion-rows-challenge](https://github.com/joseph-cavarretta/billion-rows-challenge) | Benchmarking Polars, DuckDB, pandas, AWK, and more on aggregating 1 billion rows (14 GB CSV) |
+| [kafka-spark-streaming](https://github.com/joseph-cavarretta/kafka-spark-streaming) | Real-time event pipeline: Kafka + Avro + Schema Registry → Spark Structured Streaming → Cassandra, fully Dockerized |
+| [kube-plugins](https://github.com/joseph-cavarretta/kube-plugins) | Custom `kubectl` plugins in Go |
 
 ## Let's connect
 
