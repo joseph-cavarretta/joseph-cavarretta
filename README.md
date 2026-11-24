@@ -16,7 +16,7 @@ I run a self-hosted Kubernetes cluster ([`homelab`](https://github.com/joseph-ca
 
 - **Cluster & Provisioning** — k3s across an `x86_64` control plane (`arch-mini`) and 3 `arm64` Raspberry Pi workers, automated with `cloud-init` and Ansible
 - **GitOps & Management** — Argo CD (app-of-apps with automated sync/prune/self-heal) and Rancher
-- **Networking & Security** — MetalLB (L2 LoadBalancer), Traefik ingress with LAN-only IP allowlists, and `cert-manager`
+- **Networking & Security** — MetalLB (L2 LoadBalancer), Traefik ingress with LAN-only IP allowlists, `cert-manager`, and Pi-hole on a dedicated Raspberry Pi for LAN DNS and ad-blocking
 - **Storage & ML Platform** — Garage (S3-compatible object storage) backing MLflow for experiment tracking and artifact storage
 
 ## Tech I work with
